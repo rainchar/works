@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>second_page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    
+    
+        <style>
+
+        /* *{
+            box-sizing: border-box;
+        } */
+
+        body{
+        font-family:'Noto Sans TC', sans-serif;
+        font-size: 18pt;
+
+        }
+
+        a, a:link{
+        text-decoration: none;
+        }
+
+        .container_w{
+            max-width:1200px;
+            margin: 0 auto;
+            /* background: blanchedalmond; */
+        }
+
+        h2{
+        font-size:1.5rem;
+        color:#2d2d2d; 
+        }
+
+        p{
+        font-size:0.8rem;
+        }
+
+
+        /* -----------------------header----------------------- */
+
+
+        header{
+        margin: 0 auto;
+        /* height:100vh; */
+        /* background:#f2c948; */
+        }
+
+        .kv{
+        width:100%; 
+        /* max-width:960px; */
+        height:80vh;
+        margin: 0 auto;
+        background:url("./images/second.jpg") no-repeat   center fixed;
+        background-size:cover;
+        position: relative;
+        }
+
+
+        nav{
+        width:100%;
+        margin: 0 auto;
+        background-color:#fff; 
+        display: flex;
+        justify-content:space-between;
+        padding-top:20px;
+        text-align: center;
+        /* background: aquamarine; */
+
+        }
+
+        nav ul{
+        list-style:none;
+        font-size:1rem;
+        vertical-align:middle;
+        text-align: center;
+        position: relative;
+        }
+
+        nav li{
+        margin-right:40px;
+        padding-right:40px;
+        padding-top:20px
+        }
+
+        nav li.kv_logo{
+        padding-top:8px
+        }
+
+        nav a{
+        color:#2d2d2d;
+        vertical-align: middle;
+        position: relative;
+        }
+/* 
+        nav li.circle::before{
+        content:"";
+        width:20px;
+        height:20px; 
+        border: 2px #bdd1d7 solid;
+        border-radius:100%;
+        position: absolute;
+        top:46px;
+        }  */
+
+        .circle{
+          width:20px;
+          height:20px; 
+          border: 2px #bdd1d7 solid;
+          border-radius:100%;
+          position: absolute;
+          top:24px;
+          transition: .2s;
+          z-index:1; 
+        }
+
+
+        nav a:hover{
+        color:#2d2d2d;
+        }
+
+
+    /* ----------------nav ham  copy--------------- */
+
+    nav li.ham{
+        display:none
+        }
+
+        @media screen and (max-width: 768px){
+
+        /* nav{
+        display:flex; 
+        justify-content:flex-start; 
+        }   */
+
+        .circle{
+          display: none;
+        }
+
+        nav li.desk{
+            display:none;
+        }
+    }   
+        /* nav li.ham{
+            display:block;
+            position: absolute;
+            top:3%;
+            right:0;
+            z-index:10;  
+        } */
+
+        /* nav li.circle{
+            display:none;
+        } */
+
+
+/* ----------------nav ham --------------- */
+
+
+    .navbar{
+        display: none;
+    }
+
+    
+    @media screen and (max-width: 768px){
+
+        nav{
+        background: #fff;
+    }
+
+        nav.navbar{
+        background:#fff; 
+        display:flex;
+        justify-content:center;
+        
+    }
+        li.kv_logo{
+        display:none;     
+    }
+
+
+        .desk{
+        display: none;
+    }
+
+        li.nav-item{
+        margin:0 auto; 
+        }
+
+        ul.navbar-nav { 
+         width: 100%;
+         margin:0 auto;
+         text-align: center;
+        }
+
+    }
+
+
+        /* -------------kv context----------- */
+
+        .context{
+        margin: 0 auto;
+        max-width:960px;
+        /* background: darkseagreen; */
+        padding-left:40px; 
+        margin-top:30px; 
+        }
+
+        .context h3{
+        font-size:2rem;
+        line-height:2rem;
+        letter-spacing:0.2rem; 
+        }
+
+        .context h6{
+        color:#2d2d2d;
+        }
+
+        .ps{
+            position: absolute;
+            bottom:1%;
+            right:3%;
+            color:#4b4949;
+            letter-spacing:0.15rem;   
+        }
+        
+        i.yellow{
+        color:#f7dc8a;
+
+        }
+
+/* ---------------main------------------------- */
+
+        main{
+            margin:0 auto;
+            width:100%;
+        }
+
+        main .container_w{
+            padding: 30px;
+            margin:10px auto 30px auto;
+        }
+
+        @media screen and (max-width: 768px){
+
+
+        main .container_w{
+                flex-direction:column;
+                flex-wrap:wrap;
+            } 
+        .area1, .area2, .area3 {
+                width:100%;
+                margin:0 auto;
+                padding: 0;
+                /* background:lightblue;   */
+            }
+
+      }
+
+
+    
+        .title1{
+            margin:30px auto 0 auto;
+            /* background: cadetblue; */
+            text-align:center; 
+            width:50%;
+            padding:40px 0 ;
+            }
+        
+        .area1, .area2{
+            width:50%;
+            /* background:pink; */
+        }
+
+        figure.cat{
+            width:100%;
+            border-radius:20px;
+            overflow: hidden;
+        }
+
+
+        figure.cat img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        
+       .area2{
+           margin:auto;
+           padding-left:40px;
+           /* background: #bdd1d7; */
+       }
+
+       .area3{
+           width:50%; 
+           margin:auto;
+           padding-right:40px;
+           /* background: #bdd1d7; */
+       }
+
+        ul.know li{
+            padding:18px;
+            font-size:1rem;
+            color:#383838; 
+        }
+
+        ul.know li span{
+            color:#ec8300; 
+        }
+
+        @media screen and (max-width:768px){
+
+          .area1{
+            width:100%;
+          }
+
+          .area2{
+            width:100%;
+          }
+
+          .area3{
+            width:100%;
+          }
+
+      }
+
+
+
+
+    /* ------------footer------------- */
+
+
+      footer{
+      width:100%;
+      margin: 0 auto;
+      background:#ececec;
+      padding:20px; 
+    }
+
+    footer .container_w{
+      max-width:960px;
+      margin: 0 auto;
+      /* background:darkcyan; */
+    }
+
+    .f1{
+      max-width:960px;
+      margin: 0 auto;
+      /* background:rgb(32, 207, 193); */
+      /* padding:10px;
+      margin:10px;  */
+      line-height:1rem;
+    }
+
+    .f1_p{
+      width:50%;
+      padding-left:10px;
+      font-size:0.8rem;
+      padding:10px;   
+    }
+
+
+     .f1 p.right{
+      color:#989696;
+    }
+
+
+    .f2{
+      width:50%;
+      /* background: cornflowerblue; */
+      padding:10px; 
+    }
+
+    @media screen and (max-width:768px){
+
+    .f1{
+      flex-wrap:wrap;
+      justify-content: center;
+    }
+    .f2{
+      display: none;
+  }
+}
+
+/* ------------bottom-------- */
+    .topBtn{
+        right:5%;
+        bottom:5%;
+        z-index:10;
+        border-radius:50%;
+        color:#fff;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        padding: 6px 0;
+        line-height: 1.42;
+        border-radius: 30px;
+        }
+
+
+    
+        </style>
+    </head>
+  <body>
+        <header>
+                <div class="kv">
+                  <nav class=" d-flex  justify-content-center">
+                    <ul class="nav_bar d-flex pb-9">
+                      <div class="circle"></div>
+                      <li class="desk"><a href="./first_page.html">貓咪旅館</a></li>
+                      <li class="desk active" ><a href="./second_page.html">入住須知</a></li>
+                      <li class="kv_logo"><a href="index.html"><img src="./images/logo.png" alt="favorite" width="80px" > </a></li>
+                      <li class="desk" ><a href="./third_page.html">線上視訊</a></li>
+                      <li class="desk" ><a href="https://www.facebook.com/catnlife/?ref=br_rs" target="_blank">貓館臉書</a></li>
+                      <li class="ham"><a href=""><i class="fas fa-bars fa-lg"></i></a></li>  
+                    </ul>
+                  </nav>
+
+
+ <!--------------------------------Navbar---------------------------------------->
+
+<nav class="navbar navbar-light navbar-1 white pb-3 ">
+
+    <!-- Navbar brand -->
+    <!-- <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt="favorite" width="80px" > </a> -->
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+      aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mx-3 ">
+        <li class="nav-item active">
+          <a class="nav-link " href="./index.html">貓館首頁<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./first_page.html"> 貓咪旅館</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./second_page.html">入住須知</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./third_page.html">線上視訊</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/catnlife/?ref=br_rs" target="_blank">貓館臉書</a>
+        </li>
+      </ul>
+      <!-- Links -->
+  
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!-----------------------------------Navbar end---------------------------------->                 
+
+
+
+
+                <div class="context">
+                      <h3>入 住 須 知<i class="fas fa-paw fa-xs"></i></h3>
+                        <h5>預約前請先查看入住須知</h5>
+                   </div>
+                <div class="ps d-flex">
+                    <img class="mx-2" src="./images/line_.png" alt="" width="28px" height="42px">
+                    <p> 歡迎有入住需求的飼主參觀住宿環境<br>
+                    開放時間 : 週一 ~ 週日 13:00-19:00</p>
+                </div>
+             </div>
+        </header>
+
+
+        <main>
+            <div class="title1"><h2><i class="fas fa-circle yellow"></i> 入住資格</h2></div>
+                <div class="container_w d-flex">  
+                    <div class="area1">
+                        <figure class="cat"><img src="./images/photod1f2951.jpg" alt=""></figure>
+
+                    </div>
+                    <div class="area2">
+                        <ul class="know">
+                            <li>僅提供過夜2日以上住宿需求的客人</li>
+                            <li>必須定期投藥驅蟲&施打完三合一疫苗（或其他核心疫苗）之貓咪</li>
+                            <li>剛結紮後（或重大手術後）的七天內或傷口未拆線的客人不得進住</li>
+                            <li>若您有需求，我們會利用 Email 或簡訊的方式，回報您貓咪的飲食、或精神狀況（若有此需求者請於入住時告知）</li>
+                        </ul>
+                    </div>
+            </div>
+        </main>
+
+        <main>
+                <div class="title1"><h2><i class="far fa-circle yellow"></i> 入住須知</h2></div>
+                    <div class="container_w d-flex">  
+                        <div class="area3">
+                            <ul class="know">
+                                <li>因房間有限，入住至少於前一日前來電 (02)2552-3883 預約，以避免缺房爭議，<span>住宿費用於 Check-in 時收取。</span></li>
+                                <li>Check-in 時請務必攜帶<span>預防針注射手冊「正本」</span>備查，或提供
+                                    <a href="https://www.catnlife.com/download/catnlife-docs/catnlife-vaccine.pdf">醫院證明正本(點此可下載)</a>，否則將無法入住！</li>
+                                <li>建議帶貓咪喜歡的小墊子、小玩具等有「家的味道」的物品一起入住，如此可以幫助貓咪更快適應環境。</li>
+                             </ul>
+
+                        </div>
+                        <div class="area1">
+                                <figure class="cat"><img src="./images/room2.jpg" alt=""></figure>
+                        </div>
+                </div>
+            </main>
+        
+          <!-- -------------------------footer------------------------------>
+    <footer>
+            <div class="container_w d-flex" > 
+              <div class="f1 d-flex align-items-center">
+                <div class="footer_logo">
+                <a href="./index.html"><img src="./images/logo.png" alt="" width="120px"></a></div>
+              <div class="f1_p">
+                  <h6>貓館</h6>
+                    <p>地址:103台北市大同區天水路41號 電話:(02)2552-3883</p>
+                    <p class="right"> ©夢公園有限公司貓館分公司<br>2018北市特寵業第V1070207-00號</p></div>   
+              <div class="f2">
+                  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcatnlife%2F&tabs=timeline&width=360&height=120&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="360" height="120" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+              </div>
+          </div>
+        </footer>
+      
+        <!-------------bottom---------------->
+      
+        <button class="btn btn-warning btn-lg position-fixed topBtn" id="topBtn"><i class="fas fa-chevron-up fa-lg"></i></button>
+      
+
+
+
+
+
+   
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- jq支援animateCDN -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+    
+    $(".topBtn").click(function(){
+            $("html").animate({
+                scrollTop:0
+            }, 500)
+    
+    });
+
+        var navBar=$(".nav_bar").offset().left;
+        var targetLi=$(".nav_bar li.active").offset().left;
+        var targetWidth=$(".nav_bar li.active").width();
+        // console.log(targetWidth);
+        var circlePosition=targetLi-navBar+ targetWidth/2-10;
+        $(".circle").css("left", circlePosition);
+
+        $(".nav_bar li").hover(function(){
+          $(this).addClass("active").siblings().removeClass("active");
+          var navBar=$(".nav_bar").offset().left;
+          var targetLi=$(".nav_bar li.active").offset().left;
+          var targetWidth=$(".nav_bar li.active").width();
+          // console.log(targetWidth);
+          var circlePosition=targetLi-navBar+ targetWidth/2-10;
+          $(".circle").css("left", circlePosition);
+    });  
+
+
+
+
+
+
+    </script>
+
+
+  </body>
+</html>
