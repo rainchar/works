@@ -673,22 +673,22 @@
         alert("啃啃 有好吃的點心囉!ヽ(=^･ω･^=)丿");
         }
 
-        var navBar=$(".nav_bar").offset().left;
-        var targetLi=$(".nav_bar li.active").offset().left;
-        var targetWidth=$(".nav_bar li.active").width();
-        // console.log(targetWidth);
-        var circlePosition=targetLi-navBar+ targetWidth/2-10;
-        $(".circle").css("left", circlePosition);
+    //     var navBar=$(".nav_bar").offset().left;
+    //     var targetLi=$(".nav_bar li.active").offset().left;
+    //     var targetWidth=$(".nav_bar li.active").width();
+    //     // console.log(targetWidth);
+    //     var circlePosition=targetLi-navBar+ targetWidth/2-10;
+    //     $(".circle").css("left", circlePosition);
 
-        $(".nav_bar li").hover(function(){
-          $(this).addClass("active").siblings().removeClass("active");
-          var navBar=$(".nav_bar").offset().left;
-          var targetLi=$(".nav_bar li.active").offset().left;
-          var targetWidth=$(".nav_bar li.active").width();
-          // console.log(targetWidth);
-          var circlePosition=targetLi-navBar+ targetWidth/2-10;
-          $(".circle").css("left", circlePosition);
-    });    
+    //     $(".nav_bar li").hover(function(){
+    //       $(this).addClass("active").siblings().removeClass("active");
+    //       var navBar=$(".nav_bar").offset().left;
+    //       var targetLi=$(".nav_bar li.active").offset().left;
+    //       var targetWidth=$(".nav_bar li.active").width();
+    //       // console.log(targetWidth);
+    //       var circlePosition=targetLi-navBar+ targetWidth/2-10;
+    //       $(".circle").css("left", circlePosition);
+    // });    
 
         
 
